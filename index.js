@@ -19,8 +19,9 @@ window.onload = function () {
     for(var i=0;i<list.length;i++){
         list[i].id = i
         content[i].id = i
+        //为每个TAB选项卡添加鼠标移入事件
         list[i].onmouseover=function () {
-            window.clearInterval(time)
+            window.clearInterval(time)  //停止tab自动切换
             window.nowId= parseInt(this.id)
             //延迟半秒执行
             setTimeout(function (){
@@ -28,6 +29,7 @@ window.onload = function () {
             },500)
         }
         list[i].onmouseout=function () {
+            //鼠标移出，自动切换继续
             time=setInterval(autoChange,3000)
         }
     }
