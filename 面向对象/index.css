@@ -1,0 +1,64 @@
+*{margin: 0;padding: 0;list-style: none}
+a{text-decoration: none;color: black}
+
+.box{
+    width: 348px;
+    height: 300px;
+    border: 1px black solid;
+    margin: 10px;
+}
+
+/*title样式开始*/
+.box .title{
+    position: relative;
+    width: inherit;
+    height: 50px;
+    background-color: #f7f7f7;
+}
+/*.title ul{
+    width: inherit;
+    height: inherit;
+    position: absolute;
+}*/
+.title ul li{
+    float: left;
+    width: 85px;
+    padding: 0 1px; /*边框的填充像素，li总windth为87PX*/
+    height: inherit;
+    text-align: center;
+    line-height: 50px;
+    background: #FFF;
+    border-bottom: 1px solid black;
+}
+.title ul li a:hover{
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+.title ul li.select{
+    padding: 0;
+    background: #FFFFFF;
+    border-bottom-color: #FFFFFF;
+    border-left: black 1px solid;
+    border-right: black 1px solid;
+}
+.title ul li:last-child{
+     border-right: black 0 solid;
+ }
+.title ul li:first-child{
+    border-left: black 0 solid;
+}
+/*title样式结束*/
+/*content样式开始*/
+.box .content {
+    position: relative;
+    width: inherit;
+    height: 240px;
+    padding-top: 10px;
+}
+.content img{
+    position: absolute;
+    width: inherit;
+    display: none;
+    height: inherit;
+}
+/*content样式结束*/
